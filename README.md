@@ -45,6 +45,24 @@ When a student misses a study session, the application sends the session details
 
 The AI assistant receives relevant task and schedule information so its responses can reflect the student's current workload rather than relying only on generic advice.
 
+## 🧩  AI Prompt Engineering ##
+CampusMate AI uses context-aware prompts to make AI assistance relevant to each student's academic situation.
+
+The prompts are designed around three principles:
+
+1. Context injection
+
+The AI receives relevant information about the student's tasks, deadlines, priorities, and study schedule. This helps it generate recommendations based on the student's actual workload.
+
+2. Task-specific instructions
+
+Different AI workflows have different responsibilities:
+- Academic Assistant: Understands student questions and provides practical academic planning guidance using the supplied context.
+- Study Rescheduler: Analyses a missed study session and available alternative slots, then recommends a suitable replacement.
+3. Output reliability
+
+The AI is instructed to provide relevant, actionable recommendations. Structured responses are validated before being used by the application, and local fallback logic helps preserve core scheduling functionality when the AI service is unavailable.
+
 ## ⚙️ How the Solution Works
 
 1. Students add assignments and academic tasks.
